@@ -9,7 +9,8 @@ Plain HTML and CSS, no build step.
 | `soapcap/` | Soapcap's download page (its own styles; the Download button follows GitHub's latest release, so a release needs no edit here) |
 | `matchsticks/` | Matchsticks' page, which is its App Store support URL |
 | `matchsticks/privacy/` | Matchsticks' privacy policy, its App Store privacy URL |
-| `style.css` | Styles for the home and Matchsticks pages |
+| `radio-globe/` | Radio Globe's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here |
+| `style.css` | Styles for the home, Matchsticks and Radio Globe pages |
 | `CNAME` | The custom domain, `jukenzie.com` |
 
 DNS is at Porkbun: four A records for `jukenzie.com` (185.199.108–111.153)

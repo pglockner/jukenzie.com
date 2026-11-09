@@ -1,4 +1,4 @@
-/* The home page and the Matchsticks pages. (Soapcap's page keeps its own.) */
+/* The home page and the Matchsticks and Radio Globe pages. (Soapcap's page keeps its own.) */
 :root {
   --bg: #f6f4f0;
   --text: #1f1c19;
@@ -27,6 +27,25 @@
   --card: #262320;
   --accent: #f08a5d;
   color-scheme: dark;
+}
+/* Radio Globe: the app's own day and night palettes, amber for sound. */
+.radio-globe {
+  --bg: #eef2f7;
+  --text: #15202e;
+  --muted: #5a6a7e;
+  --line: #d3dce8;
+  --card: #ffffff;
+  --accent: #b45f03;
+}
+@media (prefers-color-scheme: dark) {
+  .radio-globe {
+    --bg: #070b14;
+    --text: #e8edf5;
+    --muted: #8d9ab0;
+    --line: #1e2a3d;
+    --card: #0e1524;
+    --accent: #ffb547;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -74,5 +93,16 @@ header img { width: 76px; height: 76px; border-radius: 17px; }
 .projects a:hover { text-decoration: underline; }
 .projects .where { color: var(--muted); font-size: 14px; margin-left: 6px; }
 .projects p { margin: 2px 0 0; color: var(--muted); font-size: 16px; }
+
+.download {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.download:hover { filter: brightness(1.08); }
 
 footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
