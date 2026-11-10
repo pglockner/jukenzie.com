@@ -10,6 +10,7 @@ Plain HTML and CSS, no build step.
 | `matchsticks/` | Matchsticks' page, which is its App Store support URL |
 | `matchsticks/privacy/` | Matchsticks' privacy policy, its App Store privacy URL |
 | `radio-globe/` | Radio Globe's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here |
+| `radio-globe/privacy/` | Radio Globe's privacy policy, the privacy URL for TestFlight and both stores |
 | `style.css` | Styles for the home, Matchsticks and Radio Globe pages |
 | `CNAME` | The custom domain, `jukenzie.com` |
 
