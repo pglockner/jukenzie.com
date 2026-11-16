@@ -80,6 +80,7 @@ header div { flex: 1 1 0; }
 }
 .home h1 { text-align: center; }
 .home .tagline { text-align: center; }
+.not-found .lead { text-align: center; }
 .projects { list-style: none; padding: 0; margin: 0; }
 .projects li {
   margin: 0;
