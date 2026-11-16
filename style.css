@@ -4,7 +4,6 @@
   --text: #1f1c19;
   --muted: #5e5750;
   --line: #e2ddd5;
-  --card: #ffffff;
   --accent: #23417a;
   --serif: "New York", ui-serif, Georgia, serif;
 }
@@ -14,7 +13,6 @@
     --text: #ece9e3;
     --muted: #a7a29a;
     --line: #2b2d36;
-    --card: #1d1f27;
     --accent: #8fb0ee;
   }
 }
@@ -24,7 +22,6 @@
   --text: #ede8de;
   --muted: #a39c90;
   --line: #34302b;
-  --card: #262320;
   --accent: #f08a5d;
   color-scheme: dark;
 }
@@ -34,7 +31,6 @@
   --text: #15202e;
   --muted: #5a6a7e;
   --line: #d3dce8;
-  --card: #ffffff;
   --accent: #b45f03;
 }
 @media (prefers-color-scheme: dark) {
@@ -43,7 +39,6 @@
     --text: #e8edf5;
     --muted: #8d9ab0;
     --line: #1e2a3d;
-    --card: #0e1524;
     --accent: #ffb547;
   }
 }
