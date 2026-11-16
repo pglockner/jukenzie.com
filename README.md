@@ -20,6 +20,9 @@ Plain HTML and CSS, no build step.
 DNS is at Porkbun: four A records for `jukenzie.com` (185.199.108–111.153)
 and a `www` CNAME to `pglockner.github.io`. They point at GitHub Pages, not at
 this repo; the `CNAME` file and the repo's Pages settings claim the domain.
+Mail, such as support@jukenzie.com, goes through Porkbun's email forwarding:
+MX records to `fwd1.porkbun.com` (10) and `fwd2.porkbun.com` (20), and an SPF
+record, `v=spf1 include:_spf.porkbun.com ~all`. There is no DMARC record.
 
 Preview locally with any static server from the repo root, for example
 `python3 -m http.server`, then open http://localhost:8000 (that server
