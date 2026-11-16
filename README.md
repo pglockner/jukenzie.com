@@ -9,9 +9,9 @@ Plain HTML and CSS, no build step.
 | `soapcap/` | Soapcap's download page (its own styles; the Download button follows GitHub's latest release, so a release needs no edit here) |
 | `matchsticks/` | Matchsticks' page, which is its App Store support URL |
 | `matchsticks/privacy/` | Matchsticks' privacy policy, its App Store privacy URL |
-| `radio-globe/` | Radio Globe's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here |
-| `radio-globe/privacy/` | Radio Globe's privacy policy, the privacy URL for TestFlight and both stores |
-| `style.css` | Styles for the home, Matchsticks and Radio Globe pages |
+| `radio-globe/` | Sweep Radio's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here |
+| `radio-globe/privacy/` | Sweep Radio's privacy policy, the privacy URL for TestFlight and both stores |
+| `style.css` | Styles for the home, Matchsticks and Sweep Radio pages |
 | `CNAME` | The custom domain, `jukenzie.com` |
 
 DNS is at Porkbun: four A records for `jukenzie.com` (185.199.108–111.153)

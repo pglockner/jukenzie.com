@@ -1,4 +1,4 @@
-/* The home page and the Matchsticks and Radio Globe pages. (Soapcap's page keeps its own.) */
+/* The home page and the Matchsticks and Sweep Radio pages. (Soapcap's page keeps its own.) */
 :root {
   --bg: #f6f4f0;
   --text: #1f1c19;
@@ -25,8 +25,8 @@
   --accent: #f08a5d;
   color-scheme: dark;
 }
-/* Radio Globe: the app's own day and night palettes, amber for sound. */
-.radio-globe {
+/* Sweep Radio: the app's own day and night palettes, amber for sound. */
+.sweep-radio {
   --bg: #eef2f7;
   --text: #15202e;
   --muted: #5a6a7e;
@@ -34,7 +34,7 @@
   --accent: #a35603;
 }
 @media (prefers-color-scheme: dark) {
-  .radio-globe {
+  .sweep-radio {
     --bg: #070b14;
     --text: #e8edf5;
     --muted: #8d9ab0;
