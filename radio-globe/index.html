@@ -37,6 +37,7 @@
   <h2>Try it on Android</h2>
   <p>Sweep Radio is being tested with friends before it reaches the stores. The newest Android build is always at the link below.</p>
   <p><a class="download" href="https://github.com/pglockner/radio-globe-releases/releases/latest/download/radio-globe.apk">Download for Android</a></p>
+  <p class="fine version" id="version" hidden></p>
   <p>Open the link in the phone's browser, then open the downloaded file. The phone asks once to allow installs from the browser; that is Android's normal step for an app that doesn't come from the Play Store. Later builds install over the earlier ones and keep your favorites.</p>
   <p class="fine">iPhone testing comes through TestFlight. Write in if you'd like to be on the list.</p>
 
@@ -51,5 +52,22 @@
     © 2026 Jukenzie · <a href="../">jukenzie.com</a>
   </footer>
 </main>
+<script>
+  // The version and date of the build the Download button gives, from GitHub's
+  // latest release: the tag, not the title, which can carry the old name.
+  // Without a good answer the line stays hidden.
+  fetch("https://api.github.com/repos/pglockner/radio-globe-releases/releases/latest")
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(release => {
+      const version = String(release.tag_name || "").replace(/^v/, "");
+      const published = new Date(typeof release.published_at === "string" ? release.published_at : NaN);
+      if (!/^\d+(\.\d+)*$/.test(version) || isNaN(published)) return;
+      const date = published.toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" });
+      const line = document.getElementById("version");
+      line.textContent = "Version " + version + " · " + date;
+      line.hidden = false;
+    })
+    .catch(() => {});
+</script>
 </body>
 </html>
