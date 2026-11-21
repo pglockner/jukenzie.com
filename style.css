@@ -102,7 +102,7 @@ header div { flex: 1 1 0; }
   text-decoration: none;
 }
 .download:hover { filter: brightness(1.08); }
-/* The version line under a Download button sits 8 px below it (14 px collapsed with -6 px). */
-.version { margin-top: -6px; }
+/* A small line about the Download button above it sits 8 px below it (14 px collapsed with -6 px). */
+.under { margin-top: -6px; }
 
 footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }

@@ -9,7 +9,7 @@ Plain HTML and CSS, no build step.
 | `soapcap/` | Soapcap's download page (its own styles; the Download button follows GitHub's latest release, so a release needs no edit here) |
 | `matchsticks/` | Matchsticks' page, which is its App Store support URL |
 | `matchsticks/privacy/` | Matchsticks' privacy policy, its App Store privacy URL |
-| `radio-globe/` | Sweep Radio's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here, and the line under it shows that release's version and date, read from GitHub in the visitor's browser (hidden if that fails) |
+| `radio-globe/` | Sweep Radio's page for testers; its Download button follows the latest release in `pglockner/radio-globe-releases`, so a build needs no edit here, and the line under it shows that release's version and date, read from GitHub in the visitor's browser (hidden if that fails); its "Join the iPhone test" button is TestFlight's public link |
 | `radio-globe/privacy/` | Sweep Radio's privacy policy, the privacy URL for TestFlight and both stores |
 | `404.html` | The page Pages shows for a missing address (root-relative links, since it is served at any depth) |
 | `jukenzie.jpg`, `icon.png` | The home page's picture, and the site icon cut from it |
